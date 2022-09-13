@@ -1,0 +1,15 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: joilton-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/joilton-almeida/joilton-config-server
+          #username: 
+          #password: 
+          default-label: main
+          search-paths:
+          - 'greeting-service*'
